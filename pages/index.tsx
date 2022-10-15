@@ -88,7 +88,7 @@ const Home: NextPage = () => {
 
         <section className={styles.defaultContainer}>
           <p className={styles.defaultText}>
-            O grupo de <strong>colecionadores de armas, atiradores profissionais e caçadores (CAC’s) </strong> 
+            O grupo de <strong>colecionadores de armas, atiradores profissionais e caçadores (CAC’s) </strong>
             cresceu significativamente na gestão do presidente Jair Bolsonaro.
           </p>
 
@@ -112,7 +112,7 @@ const Home: NextPage = () => {
 
         <section className={styles.defaultContainer}>
           <p className={styles.defaultText}>
-            número de pessoas cadastradas como colecionadores de armas, atiradores profissionais e caçadores (CAC’s) 
+            número de pessoas cadastradas como colecionadores de armas, atiradores profissionais e caçadores (CAC’s)
             é maior do que os <strong>406 mil policiais</strong> militares da ativa que atuam em todo o País.
             Também é maior do que o efetivo de <strong>360 mil homens das Forças Armadas</strong>
           </p>
@@ -133,11 +133,11 @@ const Home: NextPage = () => {
         <section className={styles.defaultContainer}>
           <p className={styles.defaultText}>
             <b>
-              Nos último quatro anos, Brasil importou mais revólveres e pistolas que 
+              Nos último quatro anos, Brasil importou mais revólveres e pistolas que
               em 21 anos de outros governos
-            </b> 
-            
-            <br/><br/>
+            </b>
+
+            <br /><br />
 
             Entre 1997 e 2018, foram importados 120,4 mil revólveres e pistolas.
             De janeiro de 2019 a agosto de 2022, foram 441,3 mil
@@ -150,6 +150,64 @@ const Home: NextPage = () => {
                 width={1000}
                 height={1000}
                 alt="Gráfico do aumento da importação de revólvers"
+                objectFit={'contain'}
+              />
+            </figure>
+          </div>
+        </section>
+
+        <section className={styles.defaultContainer}>
+          <p className={styles.defaultText}>
+            Países com maior <b>número de armas em posse de civis.</b>
+          </p>
+
+          <p>
+            *Armas de fogo para cada 100 pessoas.
+          </p>
+
+          <div className={styles.centralImage}>
+            <figure>
+              <Image
+                src="/images/posse-civil.png"
+                width={1000}
+                height={400}
+                alt="Gráfico número de armas em posse civil"
+                objectFit={'contain'}
+              />
+            </figure>
+          </div>
+        </section>
+
+        <section className={styles.defaultContainer}>
+          <p className={styles.defaultText}>
+            <strong>Mortes ligadas a arma de fogo</strong> em comparação com <strong>todos os homicídios.</strong>
+          </p>
+
+          <div className={styles.centralImage}>
+            <figure>
+              <Image
+                src="/images/mortes.png"
+                width={1000}
+                height={1000}
+                alt="Gráfico número de mortes ligadas a arma de fogo em relação a todos os homicídios"
+                objectFit={'contain'}
+              />
+            </figure>
+          </div>
+        </section>
+
+        <section className={styles.defaultContainer}>
+          <p className={styles.defaultText}>
+            <strong>Acessibilidade de custo</strong>
+          </p>
+
+          <div className={styles.centralImage}>
+            <figure>
+              <Image
+                src="/images/acessibilidade-custo.png"
+                width={900}
+                height={600}
+                alt="Acessibilidade de custos de armas"
                 objectFit={'contain'}
               />
             </figure>
