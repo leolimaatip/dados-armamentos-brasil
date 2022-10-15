@@ -213,6 +213,92 @@ const Home: NextPage = () => {
             </figure>
           </div>
         </section>
+
+        <section className={styles.defaultContainer}>
+          <p className={styles.defaultText}>
+            Tipos de <b>arma de fogo</b> usadas em <b>homicídios nos EUA</b>
+          </p>
+
+          <div className={styles.centralImage}>
+            <figure>
+              <Image
+                src="/images/tipo-armas-homicidios.png"
+                width={900}
+                height={600}
+                alt="Gráfico tipo de armas em cada homicídio"
+                objectFit={'contain'}
+              />
+            </figure>
+          </div>
+        </section>
+
+        <section className={styles.defaultContainer}>
+          <p className={styles.defaultText}>
+            Cerca de <strong>metade de todas as mortes</strong> por arma de fogo são <strong>suicídios</strong>
+          </p>
+
+          <div className={styles.centralImage}>
+            <figure>
+              <Image
+                src="/images/mortes-grafico-1.png"
+                width={900}
+                height={600}
+                alt="Gráfico mortes por arma de fogo nos EUA"
+                objectFit={'contain'}
+              />
+            </figure>
+
+            <figure>
+              <Image
+                src="/images/mortes-grafico-2.png"
+                width={900}
+                height={600}
+                alt="Gráfico mortes por arma de fogo nos EUA parte 2"
+                objectFit={'contain'}
+              />
+            </figure>
+          </div>
+        </section>
+
+        <section className={styles.defaultContainer}>
+          <p className={styles.defaultText}>
+            <strong>Violência armada</strong>
+          </p>
+
+          <div className={styles.centralImage}>
+            <figure>
+              <Image
+                src="/images/violencia-armada.png"
+                width={1500}
+                height={700}
+                alt="Gráfico de aumento da violência armada"
+                objectFit={'contain'}
+              />
+            </figure>
+          </div>
+        </section>
+
+        <section className={styles.defaultContainer}>
+          <p className={styles.defaultText}>
+            <strong>Tiroteios em escolas dos EUA atingiram um recorde em 2021</strong>
+          </p>
+
+          <p>
+            *Vítimas por ano.
+          </p>
+
+          <div className={styles.centralImage}>
+            <figure>
+              <Image
+                src="/images/vitimas-ano.png"
+                width={1500}
+                height={600}
+                alt="Gráfico de aumento de tiroteios em escolas dos EUA em 2021"
+                objectFit={'contain'}
+              />
+            </figure>
+          </div>
+        </section>
       </main>
 
     </div>

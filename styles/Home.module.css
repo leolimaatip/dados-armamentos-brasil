@@ -2,12 +2,12 @@
 .statesContainer,
 .quantityContainer,
 .defaultContainer {
-  width: 70%;
+  width: 40%;
   height: max-content;
   background: #f6f6f6;
   margin: 4rem auto;
   border-radius: 2rem;
-  padding-bottom: 4rem;
+  padding-bottom: 0rem;
 }
 
 .headerText {
