@@ -8,6 +8,7 @@
   margin: 4rem auto;
   border-radius: 2rem;
   padding-bottom: 0rem;
+  text-align: center;
 }
 
 .headerText {
@@ -25,6 +26,15 @@
   text-align: center;
   padding: 2rem;
   width: 90%;
+  margin: 1rem;
+}
+
+.subTexts {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 0rem 2rem;
+    margin-bottom: 2rem;
 }
 
 .flags {
@@ -33,6 +43,7 @@
   gap: 4rem;
   margin-left: 1rem;
 }
+
 .stateContent {
   display: flex;
   gap: 2rem;
@@ -50,4 +61,10 @@
 .centralImage {
   text-align: center;
   margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
+.caption {
+  text-align: left;
+  padding-left: 2rem;
 }
