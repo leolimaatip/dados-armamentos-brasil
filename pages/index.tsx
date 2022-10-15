@@ -98,15 +98,62 @@ const Home: NextPage = () => {
           </p>
 
           <div className={styles.centralImage}>
-            <Image
-              src="/images/pf-registro-cac.png"
-              width={1000}
-              height={500}
-              alt="Bandeira do Uruguai"
-              objectFit={'contain'}
-            />
+            <figure>
+              <Image
+                src="/images/pf-registro-cac.png"
+                width={1000}
+                height={500}
+                alt="Gráfico do aumento dos registro de armas de fogo segundo o anuário de segurança pública"
+                objectFit={'contain'}
+              />
+            </figure>
           </div>
+        </section>
 
+        <section className={styles.defaultContainer}>
+          <p className={styles.defaultText}>
+            número de pessoas cadastradas como colecionadores de armas, atiradores profissionais e caçadores (CAC’s) 
+            é maior do que os <strong>406 mil policiais</strong> militares da ativa que atuam em todo o País.
+            Também é maior do que o efetivo de <strong>360 mil homens das Forças Armadas</strong>
+          </p>
+
+          <div className={styles.centralImage}>
+            <figure>
+              <Image
+                src="/images/numero-cacs.png"
+                width={800}
+                height={800}
+                alt="Gráfico do aumento dos registro de armas de fogo segundo o anuário de segurança pública"
+                objectFit={'contain'}
+              />
+            </figure>
+          </div>
+        </section>
+
+        <section className={styles.defaultContainer}>
+          <p className={styles.defaultText}>
+            <b>
+              Nos último quatro anos, Brasil importou mais revólveres e pistolas que 
+              em 21 anos de outros governos
+            </b> 
+            
+            <br/><br/>
+
+            Entre 1997 e 2018, foram importados 120,4 mil revólveres e pistolas.
+            De janeiro de 2019 a agosto de 2022, foram 441,3 mil
+          </p>
+
+          <div className={styles.centralImage}>
+            <figure>
+              <Image
+                src="/images/importacao-armas.png"
+                width={1000}
+                height={1000}
+                alt="Gráfico do aumento da importação de revólvers"
+                objectFit={'contain'}
+              />
+            </figure>
+          </div>
         </section>
       </main>
 
