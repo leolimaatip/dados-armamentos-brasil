@@ -1,14 +1,58 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
+
+  const [number, setNumber] = useState(1);
+
+  var scrollPos = 0;
+
+  const listener = (e: { preventDefault: () => void; }) => window.addEventListener('scroll', () => {
+    const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+    const scrolled = window.scrollY;
+
+    if (Math.ceil(scrolled) === scrollable) {
+      setNumber(400000)
+    }
+    else if ((document.body.getBoundingClientRect()).top > scrollPos) {
+      setNumber(1)
+    }
+    else {
+      setNumber(number + 390)
+    }
+
+  });
+
+  useEffect(() => {
+    window.addEventListener("scroll", listener);
+    return () => {
+      window.removeEventListener("scroll", listener);
+    };
+  });
+
   return (
     <div className={styles.container}>
+      <header className={styles.navContainer}>
+        <Image src="/images/sbt-news.png" width={150} height={50} alt="SBT News" objectFit={'contain'} />
+
+        <h1>Armas no Brasil em escala real</h1>
+
+        <p className={styles.counter}>
+          {number}
+        </p>
+      </header>
+
       <main>
         <section className={styles.headerContainer}>
           <p className={styles.headerText}>
-            Cada arma contida ao fundo representa uma arma registrada no Brasil</p>
+            Cada arma contida ao fundo representa uma arma registrada no Brasil
+          </p>
+
+          <div>
+            <Image src="/images/arrow.png" width={80} height={50} alt="Role para baixo" objectFit={'contain'} />
+          </div>
         </section>
 
         <section className={styles.quantityContainer}>
